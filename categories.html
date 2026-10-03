@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Categories - BookHaven</title>
+    <link rel="stylesheet" href="categories.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">BookHaven</a>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html" class="active">Categories</a></li>
+                <li><a href="index.html#reviews">Reviews</a></li>
+                <li><a href="#">Sign In</a></li>
+                <li><a href="#">🛒 Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Categories Page Body -->
+    <main class="categories-page">
+
+        <!-- Page Header -->
+        <div class="page-header">
+            <p class="section-label">BOOKHAVEN COLLECTION</p>
+            <h1>Explore Book Categories</h1>
+            <p>
+                Discover our curated library of stories, ideas, and adventures across world-famous genres. 
+                Click on any category accordion below to reveal featured books, top reviews, and place your order!
+            </p>
+        </div>
+
+        <!-- Accordion Container -->
+        <div class="accordion-container">
+
+            <!-- Category 1: Fantasy & Science Fiction -->
+            <div class="accordion-item active">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-box">
+                        <div class="accordion-title">
+                            <span class="category-icon">🧙‍♂️</span>
+                            Fantasy & Science Fiction
+                        </div>
+                        <p class="accordion-description">
+                            <a href="https://reedsy.com/blog/book-genres/" target="_blank" rel="noopener">Reedsy</a> notes that fantasy uses magic and folklore, while science fiction focuses on real or futuristic science. Opinions are mixed on <a href="https://www.reddit.com/r/books/comments/10924cy/what_are_the_core_genres_how_many_are_there/" target="_blank" rel="noopener">Reddit</a> as to whether they completely separate or blend into speculative fiction.
+                        </p>
+                    </div>
+                    <div class="accordion-icon">▲</div>
+                </button>
+
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <div class="books-grid">
+
+                            <!-- Book 1 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?auto=format&fit=crop&w=600&q=80" alt="Dune Chronicles" class="book-image">
+                                    <span class="book-badge">Sci-Fi Epic</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.9 / 5.0 (2,450 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">Dune: Messiah Chronicles</h3>
+                                    <p class="book-author">by Frank Herbert</p>
+                                    <p class="book-description">
+                                        Set in a distant galactic empire, an epic tale of political intrigue, spice melange, and humanity's fate across desert sands.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$18.99</span>
+                                        <button class="order-btn" onclick="orderBook('Dune: Messiah Chronicles')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 2 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=600&q=80" alt="The Shadow of Eldoria" class="book-image">
+                                    <span class="book-badge">High Fantasy</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.8 / 5.0 (1,890 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">The Shadow of Eldoria</h3>
+                                    <p class="book-author">by Brandon Sanderson</p>
+                                    <p class="book-description">
+                                        An immersive fantasy saga where ancient folklore and elemental magic return to reclaim a kingdom under siege.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$16.50</span>
+                                        <button class="order-btn" onclick="orderBook('The Shadow of Eldoria')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 3 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1506703719100-a0f3a48c0f86?auto=format&fit=crop&w=600&q=80" alt="Project Cosmic Journey" class="book-image">
+                                    <span class="book-badge">Space Sci-Fi</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">5.0 / 5.0 (3,120 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">Project Cosmic Odyssey</h3>
+                                    <p class="book-author">by Andy Weir</p>
+                                    <p class="book-description">
+                                        A lone astronaut must harness real scientific ingenuity and unexpected interstellar alliances to save Earth from extinction.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$19.99</span>
+                                        <button class="order-btn" onclick="orderBook('Project Cosmic Odyssey')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 2: Mystery & Thriller -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-box">
+                        <div class="accordion-title">
+                            <span class="category-icon">🕵️‍♂️</span>
+                            Mystery & Thriller
+                        </div>
+                        <p class="accordion-description">
+                            Focuses on detectives solving crimes, fast-paced tension, or high-stakes danger.
+                        </p>
+                    </div>
+                    <div class="accordion-icon">▼</div>
+                </button>
+
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <div class="books-grid">
+
+                            <!-- Book 1 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=600&q=80" alt="The Silent Detective" class="book-image">
+                                    <span class="book-badge">Detective</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.9 / 5.0 (1,670 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">The Silent Detective</h3>
+                                    <p class="book-author">by Agatha Christie</p>
+                                    <p class="book-description">
+                                        A brilliant detective unravels a dense web of high-society secrets and deceptive alibis in a classic murder case.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$14.99</span>
+                                        <button class="order-btn" onclick="orderBook('The Silent Detective')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 2 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&w=600&q=80" alt="Shadows in the Fog" class="book-image">
+                                    <span class="book-badge">Crime Thriller</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.7 / 5.0 (980 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">Shadows in the Fog</h3>
+                                    <p class="book-author">by Michael Connelly</p>
+                                    <p class="book-description">
+                                        A midnight phone call pulls investigator Jack Thorne into a high-stakes labyrinth of city corruption and deadly threats.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$15.99</span>
+                                        <button class="order-btn" onclick="orderBook('Shadows in the Fog')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 3 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?auto=format&fit=crop&w=600&q=80" alt="The Deceptive Alibi" class="book-image">
+                                    <span class="book-badge">Psychological</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.8 / 5.0 (2,100 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">The Deceptive Alibi</h3>
+                                    <p class="book-author">by Gillian Flynn</p>
+                                    <p class="book-description">
+                                        A tense psychological thriller where nobody is who they claim to be and the truth comes at a devastating cost.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$17.25</span>
+                                        <button class="order-btn" onclick="orderBook('The Deceptive Alibi')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 3: Romance -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-box">
+                        <div class="accordion-title">
+                            <span class="category-icon">💖</span>
+                            Romance
+                        </div>
+                        <p class="accordion-description">
+                            Centers on love stories and romantic relationships between characters.
+                        </p>
+                    </div>
+                    <div class="accordion-icon">▼</div>
+                </button>
+
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <div class="books-grid">
+
+                            <!-- Book 1 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?auto=format&fit=crop&w=600&q=80" alt="Whispers of Autumn" class="book-image">
+                                    <span class="book-badge">Contemporary</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.9 / 5.0 (2,840 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">Whispers of Autumn</h3>
+                                    <p class="book-author">by Nicholas Sparks</p>
+                                    <p class="book-description">
+                                        Two souls reconnect in a cozy coastal town, rediscovering passion and forgiveness amidst life's second chances.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$13.99</span>
+                                        <button class="order-btn" onclick="orderBook('Whispers of Autumn')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 2 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1474552226712-ac0f0961a954?auto=format&fit=crop&w=600&q=80" alt="Pride & Starlight" class="book-image">
+                                    <span class="book-badge">Enemies to Lovers</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.8 / 5.0 (1,450 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">Pride & Starlight</h3>
+                                    <p class="book-author">by Emily Henry</p>
+                                    <p class="book-description">
+                                        Sparks fly when rival book editors are forced to co-author a bestseller during a secluded summer writers' retreat.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$14.50</span>
+                                        <button class="order-btn" onclick="orderBook('Pride & Starlight')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 3 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1522881177547-4158cd729f7f?auto=format&fit=crop&w=600&q=80" alt="Letters Under the Stars" class="book-image">
+                                    <span class="book-badge">Heartwarming</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.9 / 5.0 (3,050 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">Letters Under the Stars</h3>
+                                    <p class="book-author">by Colleen Hoover</p>
+                                    <p class="book-description">
+                                        Handwritten love letters discovered decades later weave together two unforgettable romantic destinies.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$16.00</span>
+                                        <button class="order-btn" onclick="orderBook('Letters Under the Stars')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 4: Historical Fiction -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-box">
+                        <div class="accordion-title">
+                            <span class="category-icon">🏛️</span>
+                            Historical Fiction
+                        </div>
+                        <p class="accordion-description">
+                            Tells made-up stories set in real historical time periods.
+                        </p>
+                    </div>
+                    <div class="accordion-icon">▼</div>
+                </button>
+
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <div class="books-grid">
+
+                            <!-- Book 1 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1461360370896-922624d12aa1?auto=format&fit=crop&w=600&q=80" alt="The Clockmaker of Vienna" class="book-image">
+                                    <span class="book-badge">18th Century</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.9 / 5.0 (1,230 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">The Clockmaker of Vienna</h3>
+                                    <p class="book-author">by Ken Follett</p>
+                                    <p class="book-description">
+                                        Set in 18th-century imperial Europe, a master horologist gets caught in royal court intrigues and revolutionary movements.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$18.50</span>
+                                        <button class="order-btn" onclick="orderBook('The Clockmaker of Vienna')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 2 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=600&q=80" alt="Sails of the Renaissance" class="book-image">
+                                    <span class="book-badge">Renaissance</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.7 / 5.0 (870 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">Sails of the Renaissance</h3>
+                                    <p class="book-author">by Hilary Mantel</p>
+                                    <p class="book-description">
+                                        A brave sea merchant navigates dangerous Mediterranean trade routes and political feuds during the height of the Renaissance.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$15.80</span>
+                                        <button class="order-btn" onclick="orderBook('Sails of the Renaissance')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 3 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=600&q=80" alt="The Silk Weaver’s Secret" class="book-image">
+                                    <span class="book-badge">WWII Era</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.9 / 5.0 (2,150 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">The Silk Weaver’s Secret</h3>
+                                    <p class="book-author">by Kristin Hannah</p>
+                                    <p class="book-description">
+                                        During the dark days of WWII, a courageous artisan weaves hidden historical messages into tapestries to save her town's heritage.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$17.99</span>
+                                        <button class="order-btn" onclick="orderBook('The Silk Weaver’s Secret')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category 5: Horror -->
+            <div class="accordion-item">
+                <button class="accordion-header" onclick="toggleAccordion(this)">
+                    <div class="accordion-title-box">
+                        <div class="accordion-title">
+                            <span class="category-icon">👻</span>
+                            Horror
+                        </div>
+                        <p class="accordion-description">
+                            Designed to scare, startle, or create deep dread using dark themes.
+                        </p>
+                    </div>
+                    <div class="accordion-icon">▼</div>
+                </button>
+
+                <div class="accordion-content">
+                    <div class="accordion-inner">
+                        <div class="books-grid">
+
+                            <!-- Book 1 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1509248961158-e54f6934749c?auto=format&fit=crop&w=600&q=80" alt="The Manor at Blackwood" class="book-image">
+                                    <span class="book-badge">Gothic Horror</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.8 / 5.0 (1,920 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">The Manor at Blackwood</h3>
+                                    <p class="book-author">by Stephen King</p>
+                                    <p class="book-description">
+                                        An isolated Victorian estate harbors malevolent dark entities that feed on the deepest fears of unwary visitors.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$16.99</span>
+                                        <button class="order-btn" onclick="orderBook('The Manor at Blackwood')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 2 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1508700115892-45ecd05ae2ad?auto=format&fit=crop&w=600&q=80" alt="Whispers in the Dark" class="book-image">
+                                    <span class="book-badge">Supernatural</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.9 / 5.0 (1,410 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">Whispers in the Dark</h3>
+                                    <p class="book-author">by Shirley Jackson</p>
+                                    <p class="book-description">
+                                        Unsettling midnight voices echo from the nearby woods, dragging a peaceful village into a nightmare of psychological dread.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$14.75</span>
+                                        <button class="order-btn" onclick="orderBook('Whispers in the Dark')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Book 3 -->
+                            <div class="book-card">
+                                <div class="book-image-container">
+                                    <img src="https://images.unsplash.com/photo-1514539079130-25950c84af65?auto=format&fit=crop&w=600&q=80" alt="Curse of the Crimson Moon" class="book-image">
+                                    <span class="book-badge">Dark Mythos</span>
+                                </div>
+                                <div class="book-details">
+                                    <div class="book-rating">
+                                        ⭐⭐⭐⭐⭐ <span class="rating-score">4.7 / 5.0 (1,150 reviews)</span>
+                                    </div>
+                                    <h3 class="book-title">Curse of the Crimson Moon</h3>
+                                    <p class="book-author">by Clive Barker</p>
+                                    <p class="book-description">
+                                        Under a rare eclipse, bloodthirsty ancient rituals awaken forgotten shadow monsters seeking retribution.
+                                    </p>
+                                    <div class="book-footer">
+                                        <span class="book-price">$15.99</span>
+                                        <button class="order-btn" onclick="orderBook('Curse of the Crimson Moon')">🛒 Order Now</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Toast Notification for Order Action -->
+    <div id="orderToast" class="order-toast">
+        <span class="toast-icon">✨</span>
+        <div class="toast-text">
+            Order placed successfully for <strong id="toastBookTitle">Book</strong>!
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>BookHaven</h3>
+                <p>Your next great story starts here. Discover curated books across every genre.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="categories.html">Categories</a>
+                <a href="index.html#reviews">Reviews</a>
+                <a href="#">Sign In</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Information</h3>
+                <a href="terms.html">Terms & Conditions</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 BookHaven. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript for Accordion and Orders -->
+    <script>
+        function toggleAccordion(button) {
+            const item = button.parentElement;
+            const icon = button.querySelector('.accordion-icon');
+            const isActive = item.classList.contains('active');
+
+            // Close all accordion items
+            document.querySelectorAll('.accordion-item').forEach(el => {
+                el.classList.remove('active');
+                const ic = el.querySelector('.accordion-icon');
+                if (ic) ic.textContent = '▼';
+            });
+
+            // Toggle selected item if it wasn't active
+            if (!isActive) {
+                item.classList.add('active');
+                if (icon) icon.textContent = '▲';
+            }
+        }
+
+        function orderBook(title) {
+            const toast = document.getElementById('orderToast');
+            const toastTitle = document.getElementById('toastBookTitle');
+            toastTitle.textContent = title;
+
+            toast.classList.add('show');
+            setTimeout(() => {
+                toast.classList.remove('show');
+            }, 3500);
+        }
+    </script>
+</body>
+
+</html>
